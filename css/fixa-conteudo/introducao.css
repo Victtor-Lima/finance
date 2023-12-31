@@ -1,0 +1,131 @@
+.introducao-bg {
+ background: #f0f0f0;
+ box-shadow: inset 0 8px #ffffff, inset 0 -80px #ffffff;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.introducao-conteudo {
+  margin-bottom: 20px;
+}
+
+.introducao-tittle {
+  font-family: Arial;
+  font-size: 4rem;
+  margin-top: 120px;
+  margin-bottom: 12px;
+}
+
+.introducao-text {
+  font-family: Arial;
+  font-size: 1.3rem;
+  margin-bottom: 80px;
+}
+
+.introducao-text span {
+  color: #CC2929;
+}
+
+.introducao-vantagens-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+}
+
+.vantagens-list-item {
+  position: relative;
+  padding-left: 16px;
+}
+
+.vantagens-list-item h3 {
+  font-size: 1.125rem;
+  width: max-content;
+  margin-bottom: 8px;
+}
+
+.vantagens-list-item p {
+  font-size: 1rem;
+  margin-bottom: 60px;
+}
+
+.vantagens-list-item::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 4px;
+  top: 8px;
+  left: -1px;
+  border-radius: 4px;
+  background-color: #CC2929;
+  position: absolute;
+}
+
+.vantagens-list-item p:nth-child(3),
+.vantagens-list-item p:nth-child(4) {
+  margin-bottom: 20px;
+}
+
+.introducao-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+@media (max-width: 900px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .introducao-tittle {
+    margin-top: 80px;
+  }
+  .introducao-text {
+    margin-bottom: 60px;
+  }
+
+  .vantagens-list-item p {
+    max-width: 34ch;
+  }
+
+  .vantagens-list-item p:first-child,
+  .vantagens-list-item p:nth-child(2) {
+    margin-bottom: 20px;
+  }
+  .introducao-image {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao-tittle {
+    font-size: 3rem;
+    margin-top: 40px;
+  }
+  .introducao-text {
+
+    font-size: 1rem;
+    margin-bottom: 60px;
+  }
+  .introducao-vantagens-list {
+    grid-template-columns: 1fr;
+  }
+  .vantagens-list-item {
+    background: #cccccc;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 4px;
+  }
+
+  .vantagens-list-item p:nth-child(3),
+  .vantagens-list-item p:nth-child(4) {
+    margin-bottom: 0px;
+  }
+}
