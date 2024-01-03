@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,12 @@
   <link rel="stylesheet" href="./css/style.css">
 
 </head>
+
 <body>
   <header class="header-bg">
     <div class="header container">
       <a href="./">
-        <img class="header-logo" src="./img/img-logo.svg" width="117" height="26" alt="">
+        <img class="header-logo" src="./img/img-logo.svg" width="117" height="26" alt="logo do site">
       </a>
       <nav>
         <ul class="header-list">
@@ -20,7 +22,7 @@
           <a class="header-list-item" href="./variavel.html">Renda Variável</a>
           <a class="header-list-item" href="./blog.html">Blog</a>
         </ul>
-      </nav>      
+      </nav>
     </div>
   </header>
   <main class="introducao-bg">
@@ -48,7 +50,7 @@
         </ul>
       </div>
       <div>
-        <img class="introducao-image" src="./img/img-introducao.jpg" width="1298" height="1608"  alt="">
+        <img class="introducao-image" src="./img/img-introducao.jpg" width="1298" height="1608" alt="">
       </div>
     </div>
   </main>
@@ -72,7 +74,72 @@
           <li class="conteudo-list-item">Pós-fixados (atrelados ao CDI ou atrelados à inflação)</li>
         </ul>
       </div>
-    </div>    
+    </div>
   </article>
+  <section class="simulador-bg" aria-label="Simulador renda fixa">
+    <div class="simulador container">
+      <h1 class="simulador-tittle-p">Realize a simulação do seu futuro</h1>
+      <p class="simulador-text">Preencha os valores para simular a rentabilidade de diferentes tipos de produtos.</p>
+      <h3>Tipo de ativo</h2>
+      <ul class="simulador-list">
+        <li class="simulador-list-item">CDB/LC</li>
+        <li class="simulador-list-item">Tesouro Direto</li>
+        <li class="simulador-list-item">LCI e LCA</li>
+        <li class="simulador-list-item">Debênture</li>
+        <li class="simulador-list-item">CRI e CRA</li>
+      </ul>
+      <div class="simulador-info">
+        <form class="simulador-info-form">
+          <div class="info-form-item">
+            <label for="aplicacao-inicial">Valor da aplicação</label>
+            <input id="aplicacao-inicial"  type="text">
+          </div>
+          <div class="info-form-item">
+            <label for="invest-men">Investimento mensal</label>
+            <input id="invest-men" type="text">
+          </div>
+          <div class="info-form-item">
+            <label for="prazo">Prazo</label>
+            <input id="prazo" type="text">
+            <select id="tipo">
+              <option value="ano">Ano</option>
+              <option value="ano">Meses</option>
+            </select>
+          </div>
+          <div class="info-form-item">
+            <label for="tipo-rent">Tipo de rentabilidade</label>
+            <select name="" id="tipo-rent">
+              <option value="prefixado">Prefixado</option>
+              <option value="posfixado">Pós-fixado</option>
+            </select>
+          </div>
+          <div class="info-form-item">
+            <label for="taxa">Taxa</label>
+            <input id="taxa" type="text">
+
+          </div>
+          <button class="form-btn">Simular investimento</button>
+        </form>
+      </div>
+      <div class="simulador-dados">
+        <span class="dados-aviso1">Veja quanto o seu Patrimônio pode render</span>
+        <span class="dados-aviso2">Informe os valores ao lado para simular</span>
+      </div>
+    </div>
+  </section>
+  <footer class="footer-bg">
+    <div class="footer container">
+      <img class="footer-logo" src="./img/img-logo.svg" width="117" height="26"  alt="logo do site">
+      <h2>Informações</h2>
+      <ul class="info-list">
+        <li class="list-item"><a href="./">Renda Fixa</a></li>
+        <li class="list-item"><a href="./">Renda Variável</a></li>
+        <li class="list-item"><a href="./">Blog</a></li>
+        <li class="list-item"><a href="./">Termos e Condições</a></li>
+      </ul>
+      <p class="copy">Finance. Alguns direitos reservados.</p>
+    </div>
+  </footer>
 </body>
+
 </html>

@@ -26,3 +26,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+label {
+display: block;
+}
+
+select {
+  display: inline-block;
+}

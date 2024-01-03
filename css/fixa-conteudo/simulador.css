@@ -1,0 +1,114 @@
+.simulador-bg {
+  background: #f0f0f0;
+  padding-top: 60px;
+}
+
+.simulador {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.simulador-tittle-p {
+  grid-column: 1 /-1;
+  font-size: 2.625rem;
+}
+
+.simulador-text {
+  grid-column: 1 / -1;
+  margin-bottom: 32px;
+}
+
+.simulador h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.simulador-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 2rem;
+  grid-column: 1 / -1;
+}
+
+.simulador-list-item {
+  padding: 8px 10px;
+}
+
+.simulador-list-item:hover {
+  background: #dd4040;
+  border-radius: 4px;
+}
+
+.simulador-info-form {
+  display: grid;
+}
+
+.info-form-item label {
+  font-size: 1.125rem;
+  margin-bottom: 4px;
+}
+
+.info-form-item input {
+  width: 70%;
+  height: 40px;
+  margin-bottom: 24px;
+  border: none;
+  border-radius: 4px;
+  border-bottom: 1px solid rgba(114, 114, 114, 0.19);
+}
+
+.info-form-item #prazo {
+  width: 50%;
+}
+
+.info-form-item select {
+  width: 20%;
+  height: 42px;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(114, 114, 114, 0.19);
+}
+
+.info-form-item #tipo-rent {
+  width: 71%;
+  height: 44px;
+  margin-bottom: 24px;
+}
+
+.form-btn {
+  justify-self: start;
+  align-self: center;
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 10px 40px;
+  border-radius: 4px;
+  background: #CC2929;
+  border: none;
+  margin-bottom: 60px;
+}
+
+.simulador-dados {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #E4E4E4;
+  margin-top: 24px;
+  margin-bottom: 124px;
+  border-radius: 4px;
+}
+
+.dados-aviso1 {
+  align-self: end;
+  font-size: 1.125rem;
+  margin-bottom: 8px;
+} 
+
+.dados-aviso2 {
+  align-self: start;
+  justify-self: center;
+} 
